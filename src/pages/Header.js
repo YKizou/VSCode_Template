@@ -1,6 +1,6 @@
 import React from "react";
 
-function FrontPage(props) {
+function Header(props) {
   return (
     <div className="mx-60 py-60 items-center justify-center w-1/2 text-justify">
       <div className="flex flex-col">
@@ -17,4 +17,4 @@ function FrontPage(props) {
   );
 }
 
-export default FrontPage;
+export default Header;
