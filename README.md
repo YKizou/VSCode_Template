@@ -1,5 +1,7 @@
 # A clean, beautiful and responsive portfolio template Based On VSCode Theme!
 
+![Alt text](/public/Screenshot_Template.png?raw=true "Optional Title")
+
 
 
 To view a live example, <a href="https://kizou.org">click here.</a>
