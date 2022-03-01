@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
-import FrontPage from "./FrontPage";
+import Header from "./Header";
 import LeftBar from "./LeftBar";
 import Resume from "./Resume";
 
@@ -27,7 +27,7 @@ const Home = () => {
           <LeftBar scroll={scroll} SetScroll={SetScroll} />
         </div>
         <div className="bg-[#1e1e1e] h-full ml-72 w-full">
-          <FrontPage scroll={scroll} SetScroll={SetScroll} />
+          <Header scroll={scroll} SetScroll={SetScroll} />
           <About id="About" />
           <Resume id="Resume" />
           {/* <Projects id="Projects"/> */}
