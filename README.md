@@ -8,7 +8,7 @@ To view a live example, <a href="https://kizou.org">click here.</a>
 
 Feel free to use it as-is or customize it as much as you want.
 
-But if you want to contribute and make this much better for other developer have a look at <a href="https://github.com/YKizou/VSCode_Template/issues">Issues</a>.
+But if you want to contribute and make this much better for other developers, have a look at <a href="https://github.com/YKizou/VSCode_Template/issues">Issues</a>.
 
 If you created something awesome and want to contribute then feel free to open an <a href="https://github.com/YKizou/VSCode_Template/pulls">pull request</a>.
 
