@@ -1,6 +1,6 @@
 # A clean, beautiful and responsive portfolio template Based On VSCode Theme!
 
-![Alt text](/public/Screenshot_Template.png?raw=true "Optional Title")
+![Template Screenshot](/public/Screenshot_Template.png?raw=true "Screenshot-template")
 
 
 
