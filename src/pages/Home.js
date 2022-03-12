@@ -1,36 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import About from "./About";
 import Contact from "./Contact";
-import Header from "./Header";
 import LeftBar from "./LeftBar";
 import Resume from "./Resume";
+import MobileMenu from "./MobileMenu";
+import Header from "./Header";
 
 const Home = () => {
-  const [scroll, SetScroll] = useState();
 
-  useEffect(() => {
-    return scroll
-      ? document
-          .getElementById(scroll)
-          .scrollIntoView({
-            behavior: "smooth",
-            block: "center",
-            inline: "center",
-          })
-      : null;
-  }, [scroll]);
 
   return (
     <>
-      <div id="home" className="App flex">
-        <div className="bg-[#262526] w-72 fixed h-full">
-          <LeftBar scroll={scroll} SetScroll={SetScroll} />
+      <div id="home" className="App flex h-full ">
+        <div className="bg-[#262526] fixed h-full hidden lg:block  ">
+          <LeftBar />
         </div>
-        <div className="bg-[#1e1e1e] h-full ml-72 w-full">
-          <Header scroll={scroll} SetScroll={SetScroll} />
+        <div className="bg-[#1e1e1e] lg:pl-64 h-full ">
+          <div className="lg:hidden">
+            <MobileMenu />
+          </div>
+          <Header />
           <About id="About" />
           <Resume id="Resume" />
-          {/* <Projects id="Projects"/> */}
           <Contact id="Contact" />
         </div>
       </div>
