@@ -10,32 +10,26 @@ import { Disclosure, Transition } from "@headlessui/react";
 const MobileMenu = () => {
   const projects = [
     {
-      name: "Weekly Planner",
-      href: "https://simana.vercel.app/",
+      name: "First Project",
+      href: "#",
       icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
       current: true,
     },
     {
-      name: "Social Network",
-      href: "https://kizbook.herokuapp.com/",
+      name: "Second Project",
+      href: "#",
       icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
       current: false,
     },
     {
-      name: "Todo",
-      href: "https://kizou.org/projects/todo",
+      name: "Third Project",
+      href: "#",
       icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
       current: false,
     },
     {
-      name: "Uber Clone",
-      href: "https://uber-r9vy5ju9b-youssefkizou-gmailcom.vercel.app",
-      icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
-      current: false,
-    },
-    {
-      name: "Chess",
-      href: "https://kizou.org/projects/web/chess",
+      name: "Fourth Project",
+      href: "#",
       icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
       current: false,
     },
@@ -67,7 +61,7 @@ const MobileMenu = () => {
             <Disclosure.Panel className="">
               <code className="px-2 pt-2 pb-3 space-y-1 text-white">
                 <div
-                  className="mb-2 ml-4 font-bold flex"
+                  className="mb-2 ml-4 font-bold flex text-xl"
                   onClick={() => SetShowProjectsList(!showProjectsList)}
                 >
                   {showProjectsList ? (

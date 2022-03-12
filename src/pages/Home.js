@@ -7,8 +7,6 @@ import MobileMenu from "./MobileMenu";
 import Header from "./Header";
 
 const Home = () => {
-
-
   return (
     <>
       <div id="home" className="App flex h-full ">

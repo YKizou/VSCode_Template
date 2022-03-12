@@ -3,7 +3,10 @@ import { ClipboardListIcon } from "@heroicons/react/solid";
 
 const Resume = () => {
   return (
-    <div id="Resume" className="w-1/2 mt-64 text-justify ml-auto mr-60">
+    <div
+      id="Resume"
+      className="lg:w-1/2 mt-64 text-justify mx-12 lg:mr-60 lg:ml-auto"
+    >
       <div>
         <div className="table">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-yellow_vs" />{" "}
