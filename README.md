@@ -1,4 +1,4 @@
-# A clean and beautiful portfolio template Based On VSCode Theme!
+# A clean, beautiful and responsive portfolio template Based On VSCode Theme!
 
 ![Template Screenshot](/public/Screenshot_Template.png?raw=true "Screenshot-template")
 
