@@ -19,11 +19,10 @@ const Container = tw.div`
 `;
 
 const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
-  const [hideContact, setHideContact] = useState(false)
-  const [hideAbout, setHideAbout] = useState(false)
-  const [hideResume, setHideResume] = useState(false)
+  const [hideContact, setHideContact] = useState(false);
+  const [hideAbout, setHideAbout] = useState(false);
+  const [hideResume, setHideResume] = useState(false);
 
-  
   return (
     <div className="flex flex-row h-full">
       <Container
@@ -32,38 +31,65 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
         }}
       >
         Home.js
-      </Container> 
-      {hideAbout ? null: <Container
-        onClick={() => {
-          setOnlyAbout(true);
-          setHome(false);
-        }}
-      >
-        About.js
-        <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded" onClick={()=>setHideAbout(true)}/>
-      </Container> }
-      {hideResume ? null: <Container
-        onClick={() => {
-          setOnlyResume(true);
-          setOnlyAbout(false);
-          setHome(false);
-        }}
-      >
-        Resume.js
-        <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded" onClick={()=>setHideResume(true)}/>
-      </Container> }
-      {hideContact ? null:  <Container
-              onClick={() => {
-                setOnlyContact(true);
-                setOnlyResume(false);
+      </Container>
+      {hideAbout ? null : (
+        <Container
+          onClick={() => {
+            setOnlyAbout(true);
+            setHome(false);
+          }}
+        >
+          About.js
+          <XIcon
+            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => 
+              {e.stopPropagation();
                 setOnlyAbout(false);
-                setHome(false);
-              }}
-      >Contact.js
-              <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded" onClick={()=>{setHideContact(true) 
-                setOnlyContact(false)
-                }}/>
-      </Container> }
+                setHome(true);
+                setHideAbout(true);}}
+          />
+        </Container>
+      )}
+      {hideResume ? null : (
+        <Container
+          onClick={() => {
+            setOnlyResume(true);
+            setOnlyAbout(false);
+            setHome(false);
+          }}
+        >
+          Resume.js
+          <XIcon
+            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => 
+              {e.stopPropagation();
+              setOnlyResume(false);
+              setHome(true);
+              setHideResume(true);}}
+          />
+        </Container>
+      )}
+      {hideContact ? null : (
+        <Container
+          onClick={() => {
+            setOnlyContact(true);
+            setOnlyResume(false);
+            setOnlyAbout(false);
+            setHome(false);
+          }}
+        >
+          Contact.js
+          <XIcon
+            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setOnlyContact(false);
+              setHome(true);
+              setHideContact(true);
+            }}
+          />
+        </Container>
+      )}
     </div>
   );
 };
