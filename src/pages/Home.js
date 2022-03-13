@@ -23,7 +23,7 @@ const Home = () => {
           <div className="lg:hidden">
             <MobileMenu />
           </div>
-          <div className="bg-[#424042] h-16 w-full fixed">
+          <div className="bg-[#424042] h-12 w-full fixed hidden lg:block">
             <NavBar setHome={setHome} setOnlyAbout={setOnlyAbout} setOnlyResume={setOnlyResume} setOnlyContact={setOnlyContact}/>
           </div>
           {home ? <><Header id="Header"/>

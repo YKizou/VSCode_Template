@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
+import { CogIcon, XIcon } from "@heroicons/react/solid";
 
 const Container = tw.div`
   h-full 
@@ -8,12 +9,15 @@ const Container = tw.div`
   items-center 
   justify-center 
   text-white 
-  hover:bg-[#1e1e1e] 
+  hover:bg-[#1e1e1e]
+  hover:text-yellow_vs
   cursor-pointer
   text-lg
   font-medium
   text-gray-300
+  relative
 `;
+
 
 const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
   return (
@@ -24,6 +28,7 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
         }}
       >
         Home.js
+        <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"/>
       </Container>
       <Container
         onClick={() => {
@@ -32,6 +37,7 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
         }}
       >
         About.js
+        <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"/>
       </Container>
       <Container
         onClick={() => {
@@ -41,6 +47,7 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
         }}
       >
         Resume.js
+        <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"/>
       </Container>
       <Container
               onClick={() => {
@@ -49,7 +56,9 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
                 setOnlyAbout(false);
                 setHome(false);
               }}
-      >Contact.js</Container>
+      >Contact.js
+              <XIcon className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"/>
+      </Container>
     </div>
   );
 };
