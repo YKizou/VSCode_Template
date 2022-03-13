@@ -7,30 +7,50 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/solid";
 import { Disclosure, Transition } from "@headlessui/react";
+
+const JSIcon = require("../assets/icons/JSIcon.png");
+const TSIcon = require("../assets/icons/TSIcon.png");
+
 const MobileMenu = () => {
   const projects = [
     {
       name: "First Project",
       href: "#",
-      icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
+      icon: <img
+      src={JSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
       current: true,
     },
     {
       name: "Second Project",
       href: "#",
-      icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
+      icon:  <img
+      src={TSIcon}
+      alt="TS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
       current: false,
     },
     {
       name: "Third Project",
       href: "#",
-      icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
+      icon: <img
+      src={JSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
       current: false,
     },
     {
       name: "Fourth Project",
       href: "#",
-      icon: <CodeIcon className="w-5 text-yellow_vs mr-4" />,
+      icon: <img
+      src={JSIcon}
+      alt="JS Icon"
+      className="w-7 mr-1  ml-5 text-yellow_vs"
+    />,
       current: false,
     },
   ];
@@ -65,9 +85,9 @@ const MobileMenu = () => {
                   onClick={() => SetShowProjectsList(!showProjectsList)}
                 >
                   {showProjectsList ? (
-                    <ChevronDownIcon className="w-5 mr-4 text-yellow_vs" />
+                    <ChevronDownIcon className="w-7 mr-4" />
                   ) : (
-                    <ChevronRightIcon className=" w-5 mr-4  text-yellow_vs" />
+                    <ChevronRightIcon className=" w-7 mr-4 " />
                   )}
                   Projects :
                 </div>

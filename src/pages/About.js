@@ -1,18 +1,18 @@
 import React from "react";
 import { IdentificationIcon } from "@heroicons/react/solid";
 
-const PythonLogo = require("../assets/PythonLogo.png");
-const ReactLogo = require("../assets/ReactLogo.png");
-const TypescriptLogo = require("../assets/TypescriptLogo.png");
-const JsLogo = require("../assets/JsLogo.png");
-const NextLogo = require("../assets/NextLogo.png");
-const TailwindLogo = require("../assets/TailwindLogo.png");
-const SqlLogo = require("../assets/SqlLogo.png");
-const ReduxLogo = require("../assets/ReduxLogo.png");
-const FirebaseLogo = require("../assets/FirebaseLogo.png");
-const MongoDBLogo = require("../assets/MongoDBLogo.png");
-const NodeJSLogo = require("../assets/NodeJSLogo.png");
-const DockerLogo = require("../assets/DockerLogo.png");
+const PythonLogo = require("../assets/logos/PythonLogo.png");
+const ReactLogo = require("../assets/logos/ReactLogo.png");
+const TypescriptLogo = require("../assets/logos/TypescriptLogo.png");
+const JsLogo = require("../assets/logos/JsLogo.png");
+const NextLogo = require("../assets/logos/NextLogo.png");
+const TailwindLogo = require("../assets/logos/TailwindLogo.png");
+const SqlLogo = require("../assets/logos/SqlLogo.png");
+const ReduxLogo = require("../assets/logos/ReduxLogo.png");
+const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
+const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
+const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
+const DockerLogo = require("../assets/logos/DockerLogo.png");
 
 const About = () => {
   return (

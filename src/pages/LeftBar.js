@@ -1,74 +1,63 @@
 import React, { useState } from "react";
 import {
-  CodeIcon,
   ChevronDownIcon,
   ChevronRightIcon,
-  IdentificationIcon,
 } from "@heroicons/react/solid";
-import { MailIcon, ClipboardListIcon } from "@heroicons/react/outline";
 
-const GitLogo = require("../assets/GitLogo.png");
-const LinkedinLogo = require("../assets/LinkedinLogo.png");
-const KaggleLogo = require("../assets/KaggleLogo.png");
-const MailLogo = require("../assets/MailLogo.png");
+const GitLogo = require("../assets/logos/GitLogo.png");
+const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
+const KaggleLogo = require("../assets/logos/KaggleLogo.png");
+const MailLogo = require("../assets/logos/MailLogo.png");
 
-const LeftBar = (props) => {
+const JSIcon = require("../assets/icons/JSIcon.png");
+const TSIcon = require("../assets/icons/TSIcon.png");
+
+const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
-  const [showAboutList, SetShowAboutList] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
 
   const WebList = () => (
     <div>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
-          <CodeIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
-          <p>First Project</p>
+        <img
+                src={JSIcon}
+                alt="JS Icon"
+                className="w-7 mr-1  ml-5 text-yellow_vs"
+              />
+                    <p>First Project</p>
         </div>
       </a>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
-          <CodeIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
+        <img
+                src={TSIcon}
+                alt="TS Icon"
+                className="w-7 mr-1  ml-5 text-yellow_vs"
+              />
           <p>Second Project</p>
         </div>
       </a>
       <a href="/">
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12 w-60">
-          <CodeIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
+        <img
+                src={JSIcon}
+                alt="JS Icon"
+                className="w-7 mr-1  ml-5 text-yellow_vs"
+              />
           <p>Third Project</p>
         </div>
       </a>
       <a href="/">
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
-          <CodeIcon className="h-5 w-5 ml-5 mr-1   text-yellow_vs" />
+        <img
+                src={JSIcon}
+                alt="JS Icon"
+                className="w-7 mr-1  ml-5 text-yellow_vs"
+              />
           <p>Fourth Project</p>
         </div>
       </a>
-    </div>
-  );
-
-  const AboutList = () => (
-    <div>
-      <div
-        className="ml-10 flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a]"
-        onClick={() => props.SetScroll("About")}
-      >
-        <IdentificationIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
-        <p>About Me</p>
-      </div>
-      <div
-        className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-10"
-        onClick={() => props.SetScroll("Resume")}
-      >
-        <ClipboardListIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
-        <p>Resume</p>
-      </div>
-      <div
-        className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-10"
-        onClick={() => props.SetScroll("Contact")}
-      >
-        <MailIcon className="h-5 w-5 ml-5 mr-1   text-yellow_vs" />
-        <p>Contact</p>
-      </div>
     </div>
   );
 
@@ -77,24 +66,12 @@ const LeftBar = (props) => {
       <div>
         <div
           className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
-          onClick={() => SetShowAboutList(!showAboutList)}
-        >
-          {showAboutList ? (
-            <ChevronDownIcon className="h-5 w-5 mr-1  text-yellow_vs" />
-          ) : (
-            <ChevronRightIcon className="h-5 w-5 mr-1  text-yellow_vs" />
-          )}
-          <p>About</p>
-        </div>
-        {showAboutList ? <AboutList /> : null}
-        <div
-          className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
           onClick={() => SetShowProjectsList(!showProjectsList)}
         >
           {showProjectsList ? (
-            <ChevronDownIcon className="h-5 w-5 mr-1  text-yellow_vs" />
+            <ChevronDownIcon className="w-7 mr-1" />
           ) : (
-            <ChevronRightIcon className="h-5 w-5 mr-1  text-yellow_vs" />
+            <ChevronRightIcon className="w-7 mr-1" />
           )}
           <p>Projects</p>
         </div>
@@ -105,9 +82,9 @@ const LeftBar = (props) => {
               onClick={() => SetShowWebList(!showWebList)}
             >
               {showWebList ? (
-                <ChevronDownIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
+                <ChevronDownIcon className="w-7 mr-1  ml-5" />
               ) : (
-                <ChevronRightIcon className="h-5 w-5 mr-1  ml-5 text-yellow_vs" />
+                <ChevronRightIcon className="w-7 mr-1  ml-5" />
               )}
 
               <p>Web</p>
