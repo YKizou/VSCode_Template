@@ -9,6 +9,7 @@ module.exports = {
         blue_vs:"#389fdc",
         lightblue_vs:"#85d8fb",
         brown_vs:"#d98e73",
+        
       },
     },
     screens: {
