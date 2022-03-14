@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 import { CogIcon, XIcon } from "@heroicons/react/solid";
 
+const JSIcon = require("../assets/icons/JSIcon.png");
+
 const Container = tw.div`
   h-full 
-  w-48 
   flex 
   items-center 
-  justify-center 
+  justify-center
+  px-4 
   text-white 
   hover:bg-[#1e1e1e]
   hover:text-yellow_vs
@@ -15,7 +17,6 @@ const Container = tw.div`
   text-lg
   font-medium
   text-gray-300
-  relative
 `;
 
 const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
@@ -30,6 +31,7 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
           setHome(true);
         }}
       >
+        <img src={JSIcon} alt="JS Icon" className="w-7 mr-1  text-yellow_vs" />
         Home.js
       </Container>
       {hideAbout ? null : (
@@ -39,14 +41,20 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             setHome(false);
           }}
         >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
           About.js
           <XIcon
-            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => 
-              {e.stopPropagation();
-                setOnlyAbout(false);
-                setHome(true);
-                setHideAbout(true);}}
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setOnlyAbout(false);
+              setHome(true);
+              setHideAbout(true);
+            }}
           />
         </Container>
       )}
@@ -58,14 +66,20 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             setHome(false);
           }}
         >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
           Resume.js
           <XIcon
-            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => 
-              {e.stopPropagation();
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
               setOnlyResume(false);
               setHome(true);
-              setHideResume(true);}}
+              setHideResume(true);
+            }}
           />
         </Container>
       )}
@@ -78,9 +92,10 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             setHome(false);
           }}
         >
+          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
           Contact.js
           <XIcon
-            className="w-6 absolute right-3 hover:bg-gray-600 hover:rounded"
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setOnlyContact(false);

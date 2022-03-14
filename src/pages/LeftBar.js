@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/solid";
+import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 const GitLogo = require("../assets/logos/GitLogo.png");
 const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
@@ -20,41 +17,41 @@ const LeftBar = () => {
     <div>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
-        <img
-                src={JSIcon}
-                alt="JS Icon"
-                className="w-7 mr-1  ml-5 text-yellow_vs"
-              />
-                    <p>First Project</p>
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>First Project</p>
         </div>
       </a>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
-        <img
-                src={TSIcon}
-                alt="TS Icon"
-                className="w-7 mr-1  ml-5 text-yellow_vs"
-              />
+          <img
+            src={TSIcon}
+            alt="TS Icon"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
           <p>Second Project</p>
         </div>
       </a>
       <a href="/">
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12 w-60">
-        <img
-                src={JSIcon}
-                alt="JS Icon"
-                className="w-7 mr-1  ml-5 text-yellow_vs"
-              />
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
           <p>Third Project</p>
         </div>
       </a>
       <a href="/">
         <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
-        <img
-                src={JSIcon}
-                alt="JS Icon"
-                className="w-7 mr-1  ml-5 text-yellow_vs"
-              />
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
           <p>Fourth Project</p>
         </div>
       </a>
