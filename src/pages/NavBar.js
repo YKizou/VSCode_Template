@@ -19,26 +19,57 @@ const Container = tw.div`
   text-gray-300
 `;
 
-const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
-  const [hideContact, setHideContact] = useState(false);
-  const [hideAbout, setHideAbout] = useState(false);
-  const [hideResume, setHideResume] = useState(false);
+const ActiveContainer = tw.div`
+  h-full 
+  flex 
+  items-center 
+  justify-center
+  px-4 
+  text-white 
+  bg-[#1e1e1e]
+  hover:text-yellow_vs
+  cursor-pointer
+  text-lg
+  font-medium
+  text-gray-300
+`;
+
+const NavBar = ({ showPage, setShowPage }) => {
+  const [hidePage, setHidePage] = useState([]);
 
   return (
     <div className="flex flex-row h-full">
-      <Container
-        onClick={() => {
-          setHome(true);
-        }}
-      >
-        <img src={JSIcon} alt="JS Icon" className="w-7 mr-1  text-yellow_vs" />
-        Home.js
-      </Container>
-      {hideAbout ? null : (
+      {showPage === "home" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("home");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Home.js
+        </ActiveContainer>
+      ) : (
         <Container
           onClick={() => {
-            setOnlyAbout(true);
-            setHome(false);
+            setShowPage("home");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Home.js
+        </Container>
+      )}
+      {hidePage.includes("about") ? null : showPage === "about" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("about");
           }}
         >
           <img
@@ -51,19 +82,37 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
-              setOnlyAbout(false);
-              setHome(true);
-              setHideAbout(true);
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "about"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("about");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          About.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "about"]);
             }}
           />
         </Container>
       )}
-      {hideResume ? null : (
-        <Container
+      {hidePage.includes("resume") ? null : showPage === "resume" ? (
+        <ActiveContainer
           onClick={() => {
-            setOnlyResume(true);
-            setOnlyAbout(false);
-            setHome(false);
+            setShowPage("resume");
           }}
         >
           <img
@@ -76,20 +125,38 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
-              setOnlyResume(false);
-              setHome(true);
-              setHideResume(true);
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "resume"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("resume");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Resume.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "resume"]);
+              console.log(hidePage);
             }}
           />
         </Container>
       )}
-      {hideContact ? null : (
-        <Container
+      {hidePage.includes("contact") ? null : showPage === "contact" ? (
+        <ActiveContainer
           onClick={() => {
-            setOnlyContact(true);
-            setOnlyResume(false);
-            setOnlyAbout(false);
-            setHome(false);
+            setShowPage("contact");
           }}
         >
           <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
@@ -98,9 +165,27 @@ const NavBar = ({ setHome, setOnlyAbout, setOnlyResume, setOnlyContact }) => {
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
-              setOnlyContact(false);
-              setHome(true);
-              setHideContact(true);
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "contact"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("contact");
+          }}
+        >
+          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
+          Contact.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "contact"]);
+              console.log(hidePage);
+
             }}
           />
         </Container>

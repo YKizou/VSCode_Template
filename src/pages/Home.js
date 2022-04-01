@@ -8,10 +8,7 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 
 const Home = () => {
-  const [home, setHome] = useState(true);
-  const [onlyAbout, setOnlyAbout] = useState(false);
-  const [onlyResume, setOnlyResume] = useState(false);
-  const [onlyContact, setOnlyContact] = useState(false);
+  const [showPage, setShowPage] = useState("home");
 
   return (
     <div id="home" className="App flex h-max bg-[#1e1e1e]">
@@ -24,24 +21,22 @@ const Home = () => {
         </div>
         <div className="bg-[#424042] h-16 w-full fixed hidden lg:block">
           <NavBar
-            setHome={setHome}
-            setOnlyAbout={setOnlyAbout}
-            setOnlyResume={setOnlyResume}
-            setOnlyContact={setOnlyContact}
+            showPage={showPage}
+            setShowPage={setShowPage}
           />
         </div>
-        {home ? (
+        {showPage==="home" ? (
           <>
             <Header id="Header" />
             <About id="About" />
             <Resume id="Resume" />
             <Contact id="Contact" />{" "}
           </>
-        ) : onlyAbout ? (
+        ) : showPage==="about" ? (
           <About id="About" />
-        ) : onlyResume ? (
+        ) : showPage==="resume" ? (
           <Resume id="Resume" />
-        ) : onlyContact ? (
+        ) : showPage==="contact" ? (
           <Contact id="Contact" />
         ) : null}
       </div>
