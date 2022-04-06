@@ -1,7 +1,7 @@
 import React from "react";
 import { IdentificationIcon } from "@heroicons/react/solid";
 
-const PythonLogo = require("../assets/logos/PythonLogo.png");
+const SpringbootLogo = require("../assets/logos/PythonLogo.png");
 const ReactLogo = require("../assets/logos/ReactLogo.png");
 const TypescriptLogo = require("../assets/logos/TypescriptLogo.png");
 const JsLogo = require("../assets/logos/JsLogo.png");
@@ -9,10 +9,10 @@ const NextLogo = require("../assets/logos/NextLogo.png");
 const TailwindLogo = require("../assets/logos/TailwindLogo.png");
 const SqlLogo = require("../assets/logos/SqlLogo.png");
 const ReduxLogo = require("../assets/logos/ReduxLogo.png");
-const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
+const JavaLogo = require("../assets/logos/FirebaseLogo.png");
 const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
 const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
-const DockerLogo = require("../assets/logos/DockerLogo.png");
+const WordPressLogo = require("../assets/logos/DockerLogo.png");
 
 const About = () => {
   return (
@@ -30,17 +30,11 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros
-            non nisi vulputate eleifend. Vestibulum erat ipsum, lacinia ut nibh
-            ut, pulvinar interdum lorem. Aliquam et nisi eu risus ultrices
-            suscipit nec nec quam. Suspendisse pretium fermentum luctus.
-            Maecenas vitae vestibulum ipsum, ut varius diam. Phasellus mattis
-            nunc vel purus maximus, sit amet congue ligula tincidunt. Nulla
-            tristique luctus lacinia. Nullam ut tortor arcu.
+           Hello! My name is Vanessa. I was born and raised in Omaha Nebraska. I am blessed to be the mother of a beautiful daughter. I spend my free time exploring the outdoors, reading books, and playing angry birds. I am always curious &amp; willing to learn new things.
           </code>
           <br />
           <br />
-          <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
+          <code>Languages &amp; Technologies</code>
           <div className="grid grid-cols-3 gap-2 text-sm mt-5 text-brown_vs">
             <div className="flex flex-row  mb-3">
               <img
@@ -56,7 +50,7 @@ const About = () => {
                 alt="Next Logo"
                 className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
               />
-              <code>Next.js</code>
+              <code>Express.js</code>
             </div>
             <div className="flex flex-row mb-3">
               <img
@@ -92,19 +86,19 @@ const About = () => {
             </div>
             <div className="flex flex-row  mb-3">
               <img
-                src={PythonLogo}
-                alt="Python Logo"
+                src={SpringbootLogo}
+                alt="Spring Boot Logo"
                 className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
               />
-              <code>Python</code>
+              <code>SpringBoot</code>
             </div>
             <div className="flex flex-row mb-3">
               <img
-                src={FirebaseLogo}
-                alt="Firebase Logo"
+                src={JavaLogo}
+                alt="Java"
                 className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
               />
-              <code>Firebase</code>
+              <code>Java</code>
             </div>
             <div className="flex flex-row mb-3">
               <img
@@ -132,11 +126,11 @@ const About = () => {
             </div>
             <div className="flex flex-row mb-3">
               <img
-                src={DockerLogo}
-                alt="MongoDB Logo"
+                src={WordPressLogo}
+                alt="WordPressLogo"
                 className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
               />
-              <code>Docker</code>
+              <code>WordPress</code>
             </div>
           </div>
         </div>
