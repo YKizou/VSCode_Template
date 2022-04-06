@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-           Hello! My name is Vanessa. I was born and raised in Omaha Nebraska. I am blessed to be the mother of a beautiful daughter. I spend my free time exploring the outdoors, reading books, and playing angry birds. I am always curious and willing to learn new things.
+           Hello! My name is Vanessa. I was born and raised in Omaha Nebraska. I am blessed to be the mother of a beautiful daughter. I spend my free time exploring the outdoors, reading books, and playing angry birds. I am always curious &amp; willing to learn new things.
           </code>
           <br />
           <br />
