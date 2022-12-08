@@ -11,7 +11,14 @@ const Resume = () => {
       <div>
         <div className="table">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-yellow_vs" />{" "}
+
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
+          My Projects:
+            <br />
+            <br />
+            WIP
+            <br />
+            <br />
             My Resume: 
             <br />
             <br />
