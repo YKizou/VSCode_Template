@@ -1,6 +1,6 @@
 import React from "react";
 import { ClipboardListIcon } from "@heroicons/react/solid";
-import wrensume from "/Users/wren/Desktop/webprojects/Javascript/Wren_Portfolio/src/assets/wrensume.docx.pdf"
+import wrensume from "/Users/wren/Desktop/webprojects/Javascript/Wren_Portfolio/src/assets/logos/wrensume.docx.pdf"
 
 const Resume = () => {
   return (
