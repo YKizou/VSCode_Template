@@ -120,7 +120,7 @@ const NavBar = ({ showPage, setShowPage }) => {
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Resume.js
+          Experience.js
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
@@ -141,7 +141,7 @@ const NavBar = ({ showPage, setShowPage }) => {
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Resume.js
+          Experience.js
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {

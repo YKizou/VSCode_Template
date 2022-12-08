@@ -1,18 +1,12 @@
 import React from "react";
 import { IdentificationIcon } from "@heroicons/react/solid";
 
-const PythonLogo = require("../assets/logos/PythonLogo.png");
 const ReactLogo = require("../assets/logos/ReactLogo.png");
-const TypescriptLogo = require("../assets/logos/TypescriptLogo.png");
 const JsLogo = require("../assets/logos/JsLogo.png");
-const NextLogo = require("../assets/logos/NextLogo.png");
-const TailwindLogo = require("../assets/logos/TailwindLogo.png");
 const SqlLogo = require("../assets/logos/SqlLogo.png");
 const ReduxLogo = require("../assets/logos/ReduxLogo.png");
 const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
-const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
 const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
-const DockerLogo = require("../assets/logos/DockerLogo.png");
 
 const About = () => {
   return (
@@ -30,17 +24,27 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros
-            non nisi vulputate eleifend. Vestibulum erat ipsum, lacinia ut nibh
-            ut, pulvinar interdum lorem. Aliquam et nisi eu risus ultrices
-            suscipit nec nec quam. Suspendisse pretium fermentum luctus.
-            Maecenas vitae vestibulum ipsum, ut varius diam. Phasellus mattis
-            nunc vel purus maximus, sit amet congue ligula tincidunt. Nulla
-            tristique luctus lacinia. Nullam ut tortor arcu.
+          Hey, I'm Wren! I'm a Claims Specialist-turned-Software 
+          Engineer and recent graduate of the Grace Hopper Program at Fullstack Academy. 
+          Before I took a leap of faith and decided to become a software engineer, 
+          I worked in various client-facing roles including one in a start-up environment that 
+          really helped me sharpen my skills in cross-team collaboration, communication, 
+          and problem resolution.
+          <br />
+          <br />
+          As a next step, I'm looking to leverage my team skills 
+          in a full-time software engineering/web development role. 
+          In particular, I'm interested in joining a driven, diverse team where 
+          I can build creative and innovative projects that make an impact on people. 
+          What you can expect from me is a fast and nimble learner that brings a 
+          can-do attitude to all projects and knows how to convert feedback into successful results.
+          <br />
+          <br />
+          Feel free to reach out on LinkedIn or via email I'd love to chat!
           </code>
           <br />
           <br />
-          <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
+          <code>My skills include:</code>
           <div className="grid grid-cols-3 gap-2 text-sm mt-5 text-brown_vs">
             <div className="flex flex-row  mb-3">
               <img
@@ -50,14 +54,7 @@ const About = () => {
               />
               <code>JavaScript (ES6+)</code>
             </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={NextLogo}
-                alt="Next Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Next.js</code>
-            </div>
+            
             <div className="flex flex-row mb-3">
               <img
                 src={ReactLogo}
@@ -66,22 +63,7 @@ const About = () => {
               />
               <code>React</code>
             </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={TypescriptLogo}
-                alt="Typescript Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>TypeScript</code>
-            </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={TailwindLogo}
-                alt="Tailwind Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Tailwind CSS</code>
-            </div>
+            
             <div className="flex flex-row mb-3">
               <img
                 src={ReduxLogo}
@@ -90,14 +72,7 @@ const About = () => {
               />
               <code>Redux</code>
             </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={PythonLogo}
-                alt="Python Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Python</code>
-            </div>
+            
             <div className="flex flex-row mb-3">
               <img
                 src={FirebaseLogo}
@@ -121,22 +96,6 @@ const About = () => {
                 className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
               />
               <code>SQL</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={MongoDBLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>MongoDB</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={DockerLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Docker</code>
             </div>
           </div>
         </div>
