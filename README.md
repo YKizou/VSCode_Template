@@ -4,7 +4,7 @@
 
 
 
-To view a live example, <a href="https://kizou.org">click here.</a>
+To view a live example, <a href="https://ykizou.com">click here.</a>
 
 Feel free to use it as-is or customize it as much as you want.
 
@@ -51,7 +51,7 @@ When you are done with the setup, you should host your website online. We highly
 </ul>
 
 ## Thanks
-If you like this portfolio template, don't forget to give it a ⭐ and also share it with me <a href="mailto:hello@kizou.org">here</a>.
+If you like this portfolio template, don't forget to give it a ⭐ and also share it with me <a href="mailto:hello@ykizou.com">here</a>.
 
 
 
