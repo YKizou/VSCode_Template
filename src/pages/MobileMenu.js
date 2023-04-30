@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   MenuIcon,
   XIcon,
-  CodeIcon,
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@heroicons/react/solid";

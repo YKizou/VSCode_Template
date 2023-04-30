@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import tw from "tailwind-styled-components";
-import { CogIcon, XIcon } from "@heroicons/react/solid";
+import { XIcon } from "@heroicons/react/solid";
 
 const JSIcon = require("../assets/icons/JSIcon.png");
 
