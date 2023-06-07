@@ -8,7 +8,7 @@ import {
 import { Disclosure, Transition } from "@headlessui/react";
 
 const JSIcon = require("../assets/icons/JSIcon.png");
-const TSIcon = require("../assets/icons/TSIcon.png");
+
 
 const MobileMenu = () => {
   const projects = [
@@ -16,40 +16,40 @@ const MobileMenu = () => {
       name: "First Project",
       href: "#",
       icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
+        src={JSIcon}
+        alt="JS Icon"
+        className="w-7 mr-1  ml-5 text-yellow_vs"
+      />,
       current: true,
     },
     {
       name: "Second Project",
       href: "#",
-      icon:  <img
-      src={TSIcon}
-      alt="TS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
+      icon: <img
+        src={JSIcon}
+        alt="TS Icon"
+        className="w-7 mr-1  ml-5 text-yellow_vs"
+      />,
       current: false,
     },
     {
       name: "Third Project",
       href: "#",
       icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
+        src={JSIcon}
+        alt="JS Icon"
+        className="w-7 mr-1  ml-5 text-yellow_vs"
+      />,
       current: false,
     },
     {
       name: "Fourth Project",
       href: "#",
       icon: <img
-      src={JSIcon}
-      alt="JS Icon"
-      className="w-7 mr-1  ml-5 text-yellow_vs"
-    />,
+        src={JSIcon}
+        alt="JS Icon"
+        className="w-7 mr-1  ml-5 text-yellow_vs"
+      />,
       current: false,
     },
   ];
@@ -92,24 +92,24 @@ const MobileMenu = () => {
                 </div>
                 {showProjectsList
                   ? projects.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "block px-3 py-2 rounded-md text-base font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        <div className="flex ml-6">
-                          {item.icon}
-                          {item.name}
-                        </div>
-                      </Disclosure.Button>
-                    ))
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "block px-3 py-2 rounded-md text-base font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      <div className="flex ml-6">
+                        {item.icon}
+                        {item.name}
+                      </div>
+                    </Disclosure.Button>
+                  ))
                   : null}
               </code>
             </Disclosure.Panel>

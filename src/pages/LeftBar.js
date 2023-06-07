@@ -3,11 +3,11 @@ import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 const GitLogo = require("../assets/logos/GitLogo.png");
 const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
-const KaggleLogo = require("../assets/logos/KaggleLogo.png");
+
 const MailLogo = require("../assets/logos/MailLogo.png");
 
 const JSIcon = require("../assets/icons/JSIcon.png");
-const TSIcon = require("../assets/icons/TSIcon.png");
+
 
 const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
@@ -28,7 +28,7 @@ const LeftBar = () => {
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
-            src={TSIcon}
+            src={JSIcon}
             alt="TS Icon"
             className="w-7 mr-1  ml-5 text-yellow_vs"
           />
@@ -100,7 +100,7 @@ const LeftBar = () => {
             </a>
             <a href="/">
               <img
-                src={KaggleLogo}
+                src={LinkedinLogo}
                 alt="Kaggle Logo"
                 className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
               />

@@ -25,18 +25,16 @@ const Home = () => {
             setShowPage={setShowPage}
           />
         </div>
-        {showPage==="home" ? (
+        {showPage === "home" ? (
           <>
             <Header id="Header" />
-            <About id="About" />
-            <Resume id="Resume" />
-            <Contact id="Contact" />{" "}
+
           </>
-        ) : showPage==="about" ? (
+        ) : showPage === "about" ? (
           <About id="About" />
-        ) : showPage==="resume" ? (
+        ) : showPage === "resume" ? (
           <Resume id="Resume" />
-        ) : showPage==="contact" ? (
+        ) : showPage === "contact" ? (
           <Contact id="Contact" />
         ) : null}
       </div>
