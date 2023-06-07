@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import tw from "tailwind-styled-components";
 import { XIcon } from "@heroicons/react/solid";
 
-const JSIcon = require("../assets/icons/JSIcon.png");
+const DartIcon = require("../assets/logos/DartLogo.png");
 
 const Container = tw.div`
   h-full 
@@ -46,11 +46,11 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Home.js
+          Home.dart
         </ActiveContainer>
       ) : (
         <Container
@@ -59,11 +59,11 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Home.js
+          Home.dart
         </Container>
       )}
       {hidePage.includes("about") ? null : showPage === "about" ? (
@@ -73,17 +73,17 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          About.js
+          About.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "about"]);
+              setHidePage(prevState => [...prevState, "about"]);
             }}
           />
         </ActiveContainer>
@@ -94,17 +94,17 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          About.js
+          About.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "about"]);
+              setHidePage(prevState => [...prevState, "about"]);
             }}
           />
         </Container>
@@ -116,17 +116,17 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Resume.js
+          Resume.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "resume"]);
+              setHidePage(prevState => [...prevState, "resume"]);
             }}
           />
         </ActiveContainer>
@@ -137,17 +137,17 @@ const NavBar = ({ showPage, setShowPage }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={DartIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Resume.js
+          Resume.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "resume"]);
+              setHidePage(prevState => [...prevState, "resume"]);
               console.log(hidePage);
             }}
           />
@@ -159,14 +159,14 @@ const NavBar = ({ showPage, setShowPage }) => {
             setShowPage("contact");
           }}
         >
-          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
-          Contact.js
+          <img src={DartIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
+          Contact.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "contact"]);
+              setHidePage(prevState => [...prevState, "contact"]);
             }}
           />
         </ActiveContainer>
@@ -176,14 +176,14 @@ const NavBar = ({ showPage, setShowPage }) => {
             setShowPage("contact");
           }}
         >
-          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
-          Contact.js
+          <img src={DartIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
+          Contact.dart
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
               e.stopPropagation();
               setShowPage("home");
-              setHidePage(prevState=>[...prevState, "contact"]);
+              setHidePage(prevState => [...prevState, "contact"]);
               console.log(hidePage);
 
             }}

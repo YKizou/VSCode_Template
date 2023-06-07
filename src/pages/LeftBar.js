@@ -1,62 +1,126 @@
 import React, { useState } from "react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
-const GitLogo = require("../assets/logos/GitLogo.png");
+const GitLogo = require("../assets/logos/GithubLogo.png");
 const LinkedinLogo = require("../assets/logos/LinkedinLogo.png");
+const TwitterLogo = require("../assets/logos/TwitterLogo.png");
+const LeetcodeLogo = require("../assets/logos/LeetcodeLogo.png");
 
-const MailLogo = require("../assets/logos/MailLogo.png");
 
+
+const ReactIcon = require("../assets/logos/ReactLogo.png");
+const FlutterIcon = require("../assets/logos/FlutterLogo.png");
 const JSIcon = require("../assets/icons/JSIcon.png");
 
 
 const LeftBar = () => {
   const [showWebList, SetShowWebList] = useState(true);
   const [showProjectsList, SetShowProjectsList] = useState(true);
+  const [showMobileList, SetMobileList] = useState(true);
 
   const WebList = () => (
     <div>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
-            src={JSIcon}
-            alt="JS Icon"
+            src={FlutterIcon}
+            alt="Flutter"
             className="w-7 mr-1  ml-5 text-yellow_vs"
           />
-          <p>First Project</p>
+          <p>Whatsapp Web UI</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={ReactIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>Portfolio</p>
         </div>
       </a>
       <a href="/">
         <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
           <img
             src={JSIcon}
-            alt="TS Icon"
+            alt="React"
             className="w-7 mr-1  ml-5 text-yellow_vs"
           />
-          <p>Second Project</p>
+          <p>Calculator</p>
         </div>
       </a>
-      <a href="/">
-        <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] focus:bg-slate-300 ml-12 w-60">
-          <img
-            src={JSIcon}
-            alt="JS Icon"
-            className="w-7 mr-1  ml-5 text-yellow_vs"
-          />
-          <p>Third Project</p>
-        </div>
-      </a>
-      <a href="/">
-        <div className="flex whitespace-nowrap items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] ml-12 w-60">
-          <img
-            src={JSIcon}
-            alt="JS Icon"
-            className="w-7 mr-1  ml-5 text-yellow_vs"
-          />
-          <p>Fourth Project</p>
-        </div>
-      </a>
+
+
     </div>
   );
+  const MobileList = () => (
+    <div>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="Flutter"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>ChatCrow</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>Whatsapp UI</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>IND News</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>FlutterXOpenAI</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>Movies App</p>
+        </div>
+      </a>
+      <a href="/">
+        <div className="ml-12 flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] w-60">
+          <img
+            src={FlutterIcon}
+            alt="React"
+            className="w-7 mr-1  ml-5 text-yellow_vs"
+          />
+          <p>GSOC23 Timeline</p>
+        </div>
+      </a>
+
+
+    </div>
+  );
+
 
   return (
     <div className="text-[#a2aabc] text-lg mt-5 flex bg-[#262526] h-full">
@@ -86,35 +150,52 @@ const LeftBar = () => {
 
               <p>Web</p>
             </div>
+
             {showWebList ? <WebList /> : null}
+
+            <div
+              className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold w-72"
+              onClick={() => SetMobileList(!showMobileList)}
+            >
+              {showWebList ? (
+                <ChevronDownIcon className="w-7 mr-1  ml-5" />
+              ) : (
+                <ChevronRightIcon className="w-7 mr-1  ml-5" />
+              )}
+
+              <p>Mobile</p>
+            </div>
+
+            {showMobileList ? <MobileList /> : null}
+
           </>
         ) : null}
-        <div className="absolute inset-x-0 bottom-10 ">
+        <div className="absolute inset-x-0 bottom-5 ">
           <div className="flex px-6 space-x-7">
-            <a href="/">
+            <a href="https://github.com/vaibhav-init">
               <img
                 src={GitLogo}
-                alt="Git Logo"
+                alt="Github"
                 className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
               />
             </a>
-            <a href="/">
+            <a href="https://linkedin.com/in/vaibhavlakhera">
               <img
                 src={LinkedinLogo}
-                alt="Kaggle Logo"
+                alt="Linkedin"
                 className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
               />
             </a>
-            <a href="/">
+            <a href="https://leetcode.com/vaibhav_cpp">
               <img
-                src={LinkedinLogo}
-                alt="Linkedin Logo"
+                src={LeetcodeLogo}
+                alt="Leetcode"
                 className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
               />
             </a>
-            <a href="/">
+            <a href="https://twitter.com/twt_vaibhav">
               <img
-                src={MailLogo}
+                src={TwitterLogo}
                 alt="Mail Logo"
                 className="h-10 w-10 text-yellow_vs hover:cursor-pointer hover:h-12 hover:w-12"
               />
