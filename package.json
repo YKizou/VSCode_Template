@@ -4,6 +4,7 @@
   "homepage": "http://kizou.org",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.5",
     "@material-tailwind/react": "^1.2.4",

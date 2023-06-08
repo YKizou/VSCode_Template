@@ -1,8 +1,20 @@
 import React from "react";
 import { MailIcon } from "@heroicons/react/solid";
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_n2shuew', 'template_ftx63bw', e.target, 'MeB8kZn7I_6MFBLJd').then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+
   return (
+
 
     <div id="Contact" className="pb-72 mt-36">
 
@@ -24,17 +36,17 @@ const Contact = () => {
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Whether you have a question, a potential collaboration, or just want to say hello, this is the place to reach out. I'm passionate about what I do, and I'm always eager to explore new opportunities and engage in meaningful conversations.
 
           </p>
-          <form action="#" class="space-y-5">
+          <form class="space-y-5" onSubmit={sendEmail}>
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@gmail.com" required />
+              <input type="email" id="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@gmail.com" required />
             </div>
 
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Message</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
             </div>
-            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-purple_vs dark:hover:bg-dark_purp_vs dark:focus:bg-dark_purp_vs">Send Mail</button>
+            <button type="submit" value="send" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-purple_vs dark:hover:bg-dark_purp_vs dark:focus:bg-dark_purp_vs">Send Mail</button>
           </form>
         </div>
         <iframe
