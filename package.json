@@ -14,6 +14,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.1.1",
     "react-scripts": "5.0.0",
+    "react-typewriter-effect": "^1.1.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
