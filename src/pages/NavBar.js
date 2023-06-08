@@ -12,7 +12,7 @@ const Container = tw.div`
   px-4 
   text-white 
   hover:bg-[#1e1e1e]
-  hover:text-yellow_vs
+  hover:text-purple_vs
   cursor-pointer
   text-lg
   font-medium
@@ -27,7 +27,7 @@ const ActiveContainer = tw.div`
   px-4 
   text-white 
   bg-[#1e1e1e]
-  hover:text-yellow_vs
+  hover:text-purple_vs
   cursor-pointer
   text-lg
   font-medium

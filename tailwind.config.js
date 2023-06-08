@@ -5,11 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellow_vs:"#D9E577",
-        blue_vs:"#389fdc",
-        lightblue_vs:"#85d8fb",
-        brown_vs:"#d98e73",
-        
+        yellow_vs: "#D9E577",
+        blue_vs: "#389fdc",
+        lightblue_vs: "#85d8fb",
+        brown_vs: "#d98e73",
+        purple_vs: "#9575CD"
+
+
       },
     },
     screens: {

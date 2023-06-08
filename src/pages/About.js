@@ -23,7 +23,7 @@ const About = () => {
     >
       <div>
         <div className="table">
-          <IdentificationIcon className="h-5 w-5 mr-4 text-yellow_vs" />{" "}
+          <IdentificationIcon className="h-5 w-5 mr-4 text-purple_vs" />{" "}
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
             About Me
           </code>
@@ -140,6 +140,12 @@ const About = () => {
               />
               <code>Postman</code>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+
 
 
 
