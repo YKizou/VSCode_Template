@@ -1,5 +1,6 @@
 import React from "react";
 import { IdentificationIcon } from "@heroicons/react/solid";
+import List from "../components/List";
 
 const PythonLogo = require("../assets/logos/PythonLogo.png");
 const ReactLogo = require("../assets/logos/ReactLogo.png");
@@ -13,6 +14,21 @@ const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
 const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
 const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
 const DockerLogo = require("../assets/logos/DockerLogo.png");
+
+const skills = [
+  { name: "JavaScript (ES6+)", logo: JsLogo },
+  { name: "Next.js", logo: NextLogo },
+  { name: "React", logo: ReactLogo },
+  { name: "TypeScript", logo: TypescriptLogo },
+  { name: "Tailwind CSS", logo: TailwindLogo },
+  { name: "Redux", logo: ReduxLogo },
+  { name: "Python", logo: PythonLogo },
+  { name: "Firebase", logo: FirebaseLogo },
+  { name: "Nodejs", logo: NodeJSLogo },
+  { name: "SQL", logo: SqlLogo },
+  { name: "MongoDB", logo: MongoDBLogo },
+  { name: "Docker", logo: DockerLogo },
+];
 
 const About = () => {
   return (
@@ -41,104 +57,7 @@ const About = () => {
           <br />
           <br />
           <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
-          <div className="grid grid-cols-3 gap-2 text-sm mt-5 text-brown_vs">
-            <div className="flex flex-row  mb-3">
-              <img
-                src={JsLogo}
-                alt="Js Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>JavaScript (ES6+)</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={NextLogo}
-                alt="Next Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Next.js</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={ReactLogo}
-                alt="React Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>React</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={TypescriptLogo}
-                alt="Typescript Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>TypeScript</code>
-            </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={TailwindLogo}
-                alt="Tailwind Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Tailwind CSS</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={ReduxLogo}
-                alt="Redux Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Redux</code>
-            </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={PythonLogo}
-                alt="Python Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Python</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={FirebaseLogo}
-                alt="Firebase Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Firebase</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={NodeJSLogo}
-                alt="NodeJS Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Nodejs</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={SqlLogo}
-                alt="SQL Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>SQL</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={MongoDBLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>MongoDB</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={DockerLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Docker</code>
-            </div>
-          </div>
+          <List list={skills} />
         </div>
       </div>
     </div>

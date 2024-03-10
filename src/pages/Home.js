@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
-import LeftBar from "./LeftBar";
+import LeftBar from "../components/LeftBar";
 import Resume from "./Resume";
-import MobileMenu from "./MobileMenu";
-import Header from "./Header";
-import NavBar from "./NavBar";
+import MobileMenu from "../components/MobileMenu";
+import Header from "../components/Header";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   const [showPage, setShowPage] = useState("home");
@@ -20,23 +20,20 @@ const Home = () => {
           <MobileMenu />
         </div>
         <div className="bg-[#424042] h-16 w-full fixed hidden lg:block">
-          <NavBar
-            showPage={showPage}
-            setShowPage={setShowPage}
-          />
+          <NavBar showPage={showPage} setShowPage={setShowPage} />
         </div>
-        {showPage==="home" ? (
+        {showPage === "home" ? (
           <>
             <Header id="Header" />
             <About id="About" />
             <Resume id="Resume" />
-            <Contact id="Contact" />{" "}
+            <Contact id="Contact" />
           </>
-        ) : showPage==="about" ? (
+        ) : showPage === "about" ? (
           <About id="About" />
-        ) : showPage==="resume" ? (
+        ) : showPage === "resume" ? (
           <Resume id="Resume" />
-        ) : showPage==="contact" ? (
+        ) : showPage === "contact" ? (
           <Contact id="Contact" />
         ) : null}
       </div>
