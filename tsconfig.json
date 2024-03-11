@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "allowJs": true,
+    "target": "es5",
+    "lib": ["ES2016", "dom"],
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+  },
+  "include": ["./src/**/*"]
+}
