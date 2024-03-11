@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.31",
     "tailwind-styled-components": "^2.1.4",
     "tailwindcss": "^3.0.6"
   }
