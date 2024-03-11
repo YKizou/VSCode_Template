@@ -3,7 +3,7 @@ import cx from "classnames";
 import tw from "tailwind-styled-components";
 import { XIcon } from "@heroicons/react/solid";
 
-const JSIcon = require("../assets/icons/JSIcon.png");
+const TSIcon = require("../assets/icons/TSIcon.png");
 
 const Container = tw.div`
   h-full 
@@ -40,8 +40,8 @@ const NavBar: React.FC<Props> = ({ activeTab, setActiveTab }) => {
           setActiveTab("home");
         }}
       >
-        <img src={JSIcon} alt="JS Icon" className="w-7 mr-1  text-yellow_vs" />
-        Home.js
+        <img src={TSIcon} alt="JS Icon" className="w-7 mr-1  text-yellow_vs" />
+        Home.ts
       </Container>
 
       {closedTabs.includes("about") ? null : (
@@ -57,11 +57,11 @@ const NavBar: React.FC<Props> = ({ activeTab, setActiveTab }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={TSIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          About.js
+          About.ts
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
@@ -85,11 +85,11 @@ const NavBar: React.FC<Props> = ({ activeTab, setActiveTab }) => {
           }}
         >
           <img
-            src={JSIcon}
+            src={TSIcon}
             alt="JS Icon"
             className="w-7 mr-1  text-yellow_vs"
           />
-          Resume.js
+          Resume.ts
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
@@ -112,8 +112,8 @@ const NavBar: React.FC<Props> = ({ activeTab, setActiveTab }) => {
             setActiveTab("contact");
           }}
         >
-          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
-          Contact.js
+          <img src={TSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
+          Contact.ts
           <XIcon
             className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
             onClick={(e) => {
