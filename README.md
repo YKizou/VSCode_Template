@@ -21,7 +21,7 @@ If you created something awesome and want to contribute, then feel free to open 
 </ul>
 
 ## Sections
-✔️ Header  ✔️ About  ✔️ Resume   ✔️ Contact  ✔️ LeftBar  
+✔️ Home  ✔️ About  ✔️ Resume   ✔️ Contact  
 
 ## How To Use
 From your command line, clone and run VSCode_Template:
@@ -34,10 +34,10 @@ $ git clone https://github.com/YKizou/VSCode_Template
 $ cd VSCode_Template
 
 # Install dependencies
-$ yarn
+$ npm i
 
 # Run Project
-$ yarn start
+$ npm run dev
 ```
 
 
