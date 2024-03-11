@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 
 const Home = () => {
-  const [showPage, setShowPage] = useState("home");
+  const [activeTab, setActiveTab] = useState("home");
 
   return (
     <div id="home" className="App flex h-max bg-[#1e1e1e]">
@@ -20,22 +20,22 @@ const Home = () => {
           <MobileMenu />
         </div>
         <div className="bg-[#424042] h-16 w-full fixed hidden lg:block">
-          <NavBar showPage={showPage} setShowPage={setShowPage} />
+          <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
-        {showPage === "home" ? (
+        {activeTab === "home" && (
           <>
-            <Header id="Header" />
-            <About id="About" />
-            <Resume id="Resume" />
-            <Contact id="Contact" />
+            <Header />
+            <About />
+            <Resume />
+            <Contact />
           </>
-        ) : showPage === "about" ? (
-          <About id="About" />
-        ) : showPage === "resume" ? (
-          <Resume id="Resume" />
-        ) : showPage === "contact" ? (
-          <Contact id="Contact" />
-        ) : null}
+        )}
+        { activeTab === "about" && (
+          <About />)}
+          { activeTab === "resume" && (
+          <Resume />)}
+          { activeTab === "contact" && (
+          <Contact />)}
       </div>
     </div>
   );
