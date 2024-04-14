@@ -37,7 +37,7 @@ $ cd VSCode_Template
 $ npm i
 
 # Run Project
-$ npm run dev
+$ npm run start
 ```
 
 
