@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="mx-12 mt-60 lg:mx-60 items-center justify-center lg:w-1/2 text-justify"
+      className="flex mx-12 mt-60 lg:mx-60 items-center justify-center lg:w-1/2 text-justify"
     >
       <div>
         <div className="table">

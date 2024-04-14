@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import cx from "classnames";
+import React, { useState } from 'react';
 import tw from "tailwind-styled-components";
 import { XIcon } from "@heroicons/react/solid";
 
